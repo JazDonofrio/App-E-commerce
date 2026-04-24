@@ -1,0 +1,128 @@
+{
+  "project_name": "Under Street E-commerce",
+  "theme": "dark",
+  "archetype": "Neo-Brutalist Streetwear (Archetype 4 + 7 Hybrid)",
+  "design_philosophy": {
+    "core_principles": [
+      "Aggressive Urban Tension: High contrast, oversized typography, and sharp, unapologetic edges. No soft radii.",
+      "Neon on Void: Deepest blacks contrasted with aggressive neon accents (Acid Yellow/Hot Pink) mimicking street graffiti and night culture.",
+      "Brutalist Functionalism: Navigation and cart/checkout flows must be dead-simple and structured, contrasting with the chaotic, immersive marketing pages."
+    ],
+    "vibe": "Edgy, rebellious, exclusive, raw, high-energy"
+  },
+  "typography": {
+    "heading_font": "Anton",
+    "body_font": "Outfit",
+    "rules": {
+      "h1": "text-5xl sm:text-6xl+ uppercase tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl uppercase tracking-tight",
+      "h3": "text-2xl sm:text-3xl uppercase tracking-tight",
+      "body": "text-base tracking-normal text-zinc-300 leading-relaxed",
+      "labels": "text-xs uppercase tracking-[0.2em] font-bold text-zinc-400"
+    },
+    "pairing_strategy": "The 'Swiss Brutalist' punch: Radical weight contrast. Ultra-heavy 'Anton' for headings to scream the brand identity, paired with clean, geometric 'Outfit' for readable UI and data."
+  },
+  "colors": {
+    "backgrounds": {
+      "main": "#050505",
+      "surface_1": "#121212",
+      "surface_2": "#1A1A1A",
+      "glass": "bg-black/80 backdrop-blur-2xl"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA",
+      "muted": "#52525B",
+      "inverse": "#050505"
+    },
+    "brand_accents": {
+      "primary": "#DFFF00",
+      "primary_hover": "#BADD00",
+      "secondary": "#FF007F",
+      "tertiary": "#00FF66"
+    },
+    "status": {
+      "success": "#00FF66",
+      "warning": "#DFFF00",
+      "error": "#FF0033"
+    },
+    "borders": {
+      "subtle": "#27272A",
+      "sharp": "#3F3F46",
+      "focus": "#DFFF00"
+    }
+  },
+  "layout_spacing": {
+    "container_padding": "p-6 md:p-12 lg:p-16",
+    "section_gap": "gap-24 md:gap-32",
+    "bento_grid": {
+      "marketing": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-4"
+    },
+    "radii": {
+      "global": "rounded-none",
+      "buttons": "rounded-none",
+      "cards": "rounded-none",
+      "inputs": "rounded-none"
+    }
+  },
+  "surfaces_and_micro_themes": {
+    "marketing_cards": "border-2 border-zinc-800 bg-[#0A0A0A] hover:border-zinc-500 transition-colors duration-300",
+    "buttons_primary": "bg-[#DFFF00] text-[#050505] font-bold uppercase tracking-wider hover:bg-[#BADD00] border-2 border-[#DFFF00] hover:translate-y-[-2px] hover:shadow-[4px_4px_0px_#FF007F] transition-all",
+    "buttons_secondary": "bg-transparent text-white border-2 border-zinc-700 hover:border-white hover:bg-white hover:text-black transition-all",
+    "header": "fixed top-0 w-full z-50 bg-[#050505]/90 backdrop-blur-xl border-b border-zinc-800",
+    "dashboard_cards": "bg-[#121212] border border-zinc-800 p-6"
+  },
+  "components": {
+    "navigation": "Minimalist header. Sticky with heavy glassmorphism. Use large typographic logo 'UNDER STREET'.",
+    "hero": "Full viewport height. Gritty background image overlayed with bg-black/50. Giant typography interacting with the model image. Asymmetrical layout.",
+    "product_grid": "Bento-style or stark masonry grid. Large product images. Hover reveals alternative image or quick 'Add to Cart' neon button.",
+    "marquee": "Use react-fast-marquee. Giant outline text 'UNDER STREET // NEW DROPS //' running across the screen for kinetic texture.",
+    "checkout_mock": "Clean, highly functional form. Shadcn Input/Select with rounded-none and focus:ring-[#DFFF00]. MercadoPago mock is a high-contrast modal or section.",
+    "admin_dashboard": "Control room aesthetic. Dense data. Recharts for stats with #DFFF00 and #FF007F accents. Shadcn tables."
+  },
+  "media": {
+    "icons_library": "@phosphor-icons/react",
+    "image_urls": {
+      "hero_main": {
+        "url": "https://images.unsplash.com/photo-1767897213817-8664d9b82393?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxzdHJlZXR3ZWFyJTIwZmFzaGlvbiUyMG1vZGVsJTIwbmlnaHR8ZW58MHx8fHwxNzc2OTkzNjQzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Woman in sunglasses at night with neon lights - Main landing page hero model."
+      },
+      "hero_texture": {
+        "url": "https://images.unsplash.com/photo-1722017862026-9a6b5e7c97bf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGdyYWZmaXRpJTIwd2FsbCUyMGRhcmt8ZW58MHx8fHwxNzc2OTkzNjQzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Graffiti wall - Use as atmospheric background with low opacity behind hero/sections."
+      },
+      "product_hoodie": {
+        "url": "https://images.unsplash.com/photo-1647540573277-4954a0c302c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxibGFjayUyMGhvb2RpZSUyMGZhc2hpb258ZW58MHx8fHwxNzc2OTkzNjU2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Man in black hoodie - Main hoodie product image."
+      },
+      "product_pants": {
+        "url": "https://images.pexels.com/photos/35043249/pexels-photo-35043249.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Streetwear cargo pants with chain accessory - Main pants product image."
+      },
+      "product_caps": {
+        "url": "https://images.unsplash.com/photo-1558015382-8feeaeb602f6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwzfHxzdHJlZXR3ZWFyJTIwY2Fwc3xlbnwwfHx8fDE3NzY5OTM2NTZ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Black cap - Main cap/accessory product image."
+      },
+      "model_lookbook": {
+        "url": "https://images.pexels.com/photos/15213190/pexels-photo-15213190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Punk/streetwear model against graffiti wall - Use for category banners or about section."
+      }
+    }
+  },
+  "accessibility_and_interactions": {
+    "focus_states": "All interactive elements must have a visible focus ring: focus:outline-none focus:ring-2 focus:ring-[#DFFF00] focus:ring-offset-2 focus:ring-offset-[#050505]",
+    "hover_states": "Hard shadows that appear on hover (brutalist style), e.g., hover:shadow-[4px_4px_0px_#DFFF00]",
+    "animations": "Snappy, fast transitions. Use Framer Motion for entrance staggers on product grids (duration 0.3s, ease-out). No slow fades.",
+    "testing": "All buttons, links, form inputs, and checkout interactions must include descriptive data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "Build the UI in React with Tailwind CSS and Shadcn UI (Customized heavily to remove default Vercel aesthetic).",
+    "Strip all border-radius from Shadcn components; use rounded-none everywhere to enforce the brutalist streetwear look.",
+    "Use 'Anton' font for all major headings and uppercase labels. Ensure tracking-tight is applied.",
+    "Implement a mock Google OAuth login modal with high contrast dark styling.",
+    "For the MercadoPago mock checkout flow, build a clean, dense form that looks like a high-end technical interface.",
+    "The admin dashboard must feel like an underground 'control room'. Use dense tables, monospaced numbers, and sharp borders.",
+    "Apply `data-testid` universally across all interactive elements, products, and admin actions for testing."
+  ]
+}
